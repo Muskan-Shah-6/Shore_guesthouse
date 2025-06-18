@@ -1,12 +1,20 @@
-import React from 'react' 
+import React from 'react'
 import './App.css'
+import MainLayout from './layouts/MainLayout'
+import Home from './pages/Home'
+import Gallery from './pages/Gallery'
+import Information from './pages/Information'
+import { Routes, Route } from 'react-router-dom'
 
-function App() { 
-
+function App() {
   return (
-    <>
-      <h1 className='text-2xl animate-bounce text-center text-green-800 mt-5 font-bold underline'>Assalamualaikum...</h1>
-    </>
+    <Routes>
+      <Route element={<MainLayout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/info" element={<Information />} />
+      </Route>
+    </Routes>
   )
 }
 
