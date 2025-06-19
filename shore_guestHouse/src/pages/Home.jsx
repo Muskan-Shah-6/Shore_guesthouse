@@ -39,10 +39,10 @@ const Home = () => {
             </section>
             {/* Second page marquee section */}
             <section className="py-10">
-                <div className='px-2 sm:px-[15px] lg:px-35 space-y-5 '>
+                <div className='px-2 sm:px-[15px] lg:px-35 space-y-5'   data-aos="fade-right">
                     <p className='text-sm font-normal  text-start text-black'>Gallery</p>
                     <h1 className='text-black text-start  text-3xl '>Experience Shore Guesthouse.</h1>
-                    <AnimatedButton onClick={() => navigate('/gallery')} >View full gallert</AnimatedButton>
+                    <AnimatedButton onClick={() => navigate('/gallery')} >View full gallery</AnimatedButton>
                 </div>
                 <div className='px-0 sm:px-[15px] lg:px-25 space-y-5  overflow-hidden ' >
                     <MarqueeGallery />

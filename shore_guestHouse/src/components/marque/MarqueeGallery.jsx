@@ -20,13 +20,13 @@ const imageData = [
 const MarqueeGallery = () => {
   return (
     <div className="py-10">
-      <Marquee speed={40} gradient={false} className="gap-10 sm:gap-2 overflow-y-hidden">
+      <Marquee speed={40} gradient={false} className="gap-2 overflow-y-hidden">
         {imageData.map((item, index) => (
           <div
             key={index}
             className={`mx-5 flex flex-col items-center ${item.offsetY}`}
           >
-            <div className={`rounded-lg overflow-hidden shadow-md ${item.height} ${item.rotate} hover:shadow-lime-200 cursor-pointer`}>
+            <div className={`rounded-lg overflow-hidden shadow-md ${item.height} ${item.rotate} hover:shadow-amber-900 cursor-pointer`}>
               <img
                 src={item.src}
                 alt={`img-${index}`}
