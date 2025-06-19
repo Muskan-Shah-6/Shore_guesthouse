@@ -36,7 +36,7 @@ const Home = () => {
                 </div>
             </section>
             {/* Second page marquee section */}
-            <section className="py-10 ">
+            <section className="py-10">
                 <div className='px-2 sm:px-[15px] lg:px-35 space-y-5 '>
                     <p className='text-sm font-normal  text-start text-black'>Gallery</p>
                     <h1 className='text-black text-start  text-3xl '>Experience Shore Guesthouse.</h1>
