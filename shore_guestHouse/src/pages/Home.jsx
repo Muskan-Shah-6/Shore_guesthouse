@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react'
 import HomeImage from '../assets/images/Home/Home_bg.png'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import MarqueeGallery from '../components/marque/MarqueeGallery'
+import AnimatedButton from '../components/Button/AnimatedButton'
 
 const Home = () => {
     useEffect(() => {
@@ -12,6 +13,7 @@ const Home = () => {
             once: true
         })
     })
+    const navigate = useNavigate()
     return (
         <>
             {/* First page */}
@@ -40,7 +42,7 @@ const Home = () => {
                 <div className='px-2 sm:px-[15px] lg:px-35 space-y-5 '>
                     <p className='text-sm font-normal  text-start text-black'>Gallery</p>
                     <h1 className='text-black text-start  text-3xl '>Experience Shore Guesthouse.</h1>
-                    <h3><Link to='/gallery' className='text-4xl text-sans text-blue-500 underline hover:text-blue-700'>View full gallery</Link></h3> 
+                    <AnimatedButton onClick={() => navigate('/gallery')} >View full gallert</AnimatedButton>
                 </div>
                 <div className='px-0 sm:px-[15px] lg:px-25 space-y-5  overflow-hidden ' >
                     <MarqueeGallery />

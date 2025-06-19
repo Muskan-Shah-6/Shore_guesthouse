@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa'
+import AnimatedButton from '../Button/AnimatedButton';
 
 const Navbar = () => {
     const [ismenuOpen, setIsmenuOpen] = useState(false)
@@ -45,12 +46,9 @@ const Navbar = () => {
                                 </Link>
                             </li>
                             <div className="border-l h-14 mx-2"></div>
-                            <li className="h-full flex items-center bg-black px-4 w-30 ">
-                                <a href='#'
-                                    className="text-white   px-2 py-2 rounded-sm hover:opacity-90 text-sm"
-                                >
-                                    Book now
-                                </a>
+                            <li className="h-full flex  px-4 w-45">
+                                <AnimatedButton>Book Now</AnimatedButton>
+                               
                             </li>
                         </ul>
                     </div>
