@@ -1,7 +1,7 @@
 import React from 'react'
 import AnimatedButton from '../Button/AnimatedButton'
 
-const ImageBanner = ({ imageScr, title, heading, btn, position = 'center', overlayOpacity = 0.5, textClassname = '', classname = '', height = 'h-screen' }) => {
+const ImageBanner = ({ imageScr, title, heading, btn, position = 'center', overlayOpacity = 0.5, textClassname = '', classname = '' }) => {
     // Set the position class for banner
     const positionClasses = {
         center: 'items-center justify-center text-center',
@@ -9,11 +9,11 @@ const ImageBanner = ({ imageScr, title, heading, btn, position = 'center', overl
     }
     return (
         <>
-            <section className={`w-full ${classname} ${height}`}>
+            <section className={`w-full ${classname}`}>
                 <div className="px-0 sm:px-[15px] lg:px-25">
                     <div className={`relative w-full overflow-hidden`}>
                         {/* Background Image */}
-                        <img src={imageScr} alt="Banner background" className="w-full h-full object-cover" />
+                        <img src={imageScr} alt="Banner background" className="w-full  object-cover" />
                         {/* Overlay */}
                         <div className='absolute  inset-0 bg-black z-10' style={{ opacity: overlayOpacity }} ></div>
                         {/* Banner content */}

@@ -1,0 +1,78 @@
+.word-gallery-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.word-gallery-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-word {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.gallery-word.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gallery-word.passed {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.gallery-word.upcoming {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.image-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin-top: 100vh;
+  transform: translateY(0);
+  transition: transform 0.1s ease-out;
+}
+
+.image-section.visible {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.parallax-image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Add this if your images aren't displaying properly */
+.parallax-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

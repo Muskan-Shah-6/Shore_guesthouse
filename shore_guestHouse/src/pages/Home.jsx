@@ -19,9 +19,7 @@ const Home = () => {
     const navigate = useNavigate()
     return (
         <>
-            {/* First page */}
-
-
+            {/* First page */} 
             <ImageBanner imageScr={HomeImage} heading={'Where Comfort and Charm Meet the Aegean'} position='center' />
 
             {/* Second page marquee section */}
