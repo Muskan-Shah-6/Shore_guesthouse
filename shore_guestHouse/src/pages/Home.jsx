@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react'
 import HomeImage from '../assets/images/Home/Home_bg.png'
+import HomeFooter from '../assets/images/Home/footer_bg.png'
 import { Link, useNavigate } from 'react-router-dom'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import MarqueeGallery from '../components/marque/MarqueeGallery'
 import AnimatedButton from '../components/Button/AnimatedButton'
+import ImageBanner from '../components/ImageBanner'
 
 const Home = () => {
     useEffect(() => {
@@ -17,29 +19,13 @@ const Home = () => {
     return (
         <>
             {/* First page */}
-            <section>
-                <div className="px-0 sm:px-[15px] lg:px-25">
-                    <div className="relative w-full h-screen overflow-hidden">
-                        {/* Background Image */}
-                        <img
-                            src={HomeImage}
-                            alt="Home background"
-                            className="w-full h-full object-cover"
-                        />
 
-                        {/* Overlay only over the image */}
-                        <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
 
-                        {/* Optional Text on Image */}
-                        <div className="absolute inset-0 z-20 flex items-center justify-center">
-                            <h1 data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" className="text-white text-2xl sm:text-4xl text-center ">Where Comfort and Charm Meet the Aegean</h1>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <ImageBanner imageScr={HomeImage} heading={'Where Comfort and Charm Meet the Aegean'} position='center' />
+
             {/* Second page marquee section */}
             <section className="py-10">
-                <div className='px-2 sm:px-[15px] lg:px-35 space-y-5'   data-aos="fade-right">
+                <div className='px-2 sm:px-[15px] lg:px-35 space-y-5' data-aos="fade-right">
                     <p className='text-sm font-normal  text-start text-black'>Gallery</p>
                     <h1 className='text-black text-start  text-3xl '>Experience Shore Guesthouse.</h1>
                     <AnimatedButton onClick={() => navigate('/gallery')} >View full gallery</AnimatedButton>
@@ -47,6 +33,28 @@ const Home = () => {
                 <div className='px-0 sm:px-[15px] lg:px-25 space-y-5  overflow-hidden ' >
                     <MarqueeGallery />
                 </div>
+            </section>
+
+            {/* About section */}
+            <section className='py-15' >
+                <div className='bg-white max-w-7xl mx-auto px-2 sm:px-[15px] lg:px-10 py-8 space-y-2 '>
+                    <div data-aos="fade-up">
+                        <p className='text-start text-sm text-black'>About us</p>
+                        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl max-w-[700px] w-full leading-relaxed">
+                            Tucked into the rugged cliffs of Santorini, the Shore Guesthouse offers a retreat with uninterrupted views of the caldera.
+                        </h1>
+
+                        <hr className="border-amber-950 max-w-[700px] w-full" />
+
+                        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl max-w-[700px] w-full leading-relaxed">
+                            To learn the history behind Shore Guesthouse and the beauty of Santorini.
+                        </h1>
+                        <AnimatedButton onClick={() => navigate('/info')}>Read our story</AnimatedButton>
+                    </div>
+                </div>
+            </section>
+            <section  className='h-[600px]'>
+                <ImageBanner height='400px' imageScr={HomeFooter} title={'Plan Your Dream Getaway:'} heading={'Summer 2025 Dates Available'} btn="Book now" position='top_left' />
             </section>
         </>
     )
