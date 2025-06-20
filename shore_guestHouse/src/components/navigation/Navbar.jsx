@@ -48,21 +48,22 @@ const Navbar = () => {
                             <div className="border-l h-14 mx-2"></div>
                             <li className="h-full flex  px-4 w-45">
                                 <AnimatedButton>Book Now</AnimatedButton>
-                               
                             </li>
                         </ul>
                     </div>
                 </nav>
                 {/* Menu options for responsive || mobile screens */}
-                
+
                 <div className={`sm:hidden overflow-hidden transition-all duration-300 ease-in-out ${ismenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
                     <ul className='sm:hidden flex flex-col gap-4 mt-4 pb-4 px-4'>
                         <li><Link to='/' onClick={() => setIsmenuOpen(false)}>Home</Link></li>
                         <li><Link to='/gallery' onClick={() => setIsmenuOpen(false)}>Gallery</Link></li>
                         <li><Link to='/info' onClick={() => setIsmenuOpen(false)}>Information</Link></li>
-                        <li className="text-white bg-black px-4 py-2 rounded-sm inline-block w-fit">Book Now</li>
+                        <li className="h-full flex w-45">
+                            <AnimatedButton>Book Now</AnimatedButton>
+                        </li>
                     </ul>
-                </div> 
+                </div>
             </div>
             <hr />
         </header>

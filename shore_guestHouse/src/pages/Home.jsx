@@ -37,14 +37,15 @@ const Home = () => {
 
             {/* About section */}
             <section className='py-15' >
-                <div className='bg-white shadow-md max-w-7xl mx-auto  px-2 sm:px-[15px] lg:px-10 py-15 space-y-2 '>
-                    <div data-aos="fade-up">
+                <div className='bg-white shadow-md max-w-7xl mx-auto  px-2 sm:px-[15px] lg:px-10 py-15'>
+                    <div data-aos="fade-up" className='space-y-5'>
                         <p className='text-start text-sm text-black'>About us</p>
                         <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl max-w-[700px] w-full leading-relaxed">
                             Tucked into the rugged cliffs of Santorini, the Shore Guesthouse offers a retreat with uninterrupted views of the caldera.
                         </h1>
 
-                        <hr className="border-amber-950 max-w-[700px] w-full" />
+                        <hr className="h-1 max-w-[700px] w-full bg-gradient-to-r from-amber-800 via-amber-500 to-amber-800 border-0 rounded" />
+
 
                         <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl max-w-[700px] w-full leading-relaxed">
                             To learn the history behind Shore Guesthouse and the beauty of Santorini.
@@ -53,7 +54,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section  className='h-[600px]'>
+            <section className='h-[600px]'>
                 <ImageBanner height='400px' imageScr={HomeFooter} title={'Plan Your Dream Getaway:'} heading={'Summer 2025 Dates Available'} btn="Book now" position='top_left' />
             </section>
         </>
