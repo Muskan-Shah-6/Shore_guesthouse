@@ -1,5 +1,5 @@
 import React from 'react'
-import AnimatedButton from './Button/AnimatedButton'
+import AnimatedButton from '../Button/AnimatedButton'
 
 const ImageBanner = ({ imageScr, title, heading, btn, position = 'center', overlayOpacity = 0.5, textClassname = '', classname = '', height = 'h-screen' }) => {
     // Set the position class for banner

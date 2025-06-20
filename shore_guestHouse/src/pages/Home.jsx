@@ -5,8 +5,8 @@ import { Link, useNavigate } from 'react-router-dom'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import MarqueeGallery from '../components/marque/MarqueeGallery'
-import AnimatedButton from '../components/Button/AnimatedButton'
-import ImageBanner from '../components/ImageBanner'
+import AnimatedButton from '../components/Button/AnimatedButton' 
+import ImageBanner from '../components/Banner/ImageBanner'
 
 const Home = () => {
     useEffect(() => {
