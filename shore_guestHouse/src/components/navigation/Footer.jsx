@@ -11,13 +11,13 @@ const Footer = () => {
         {/* Left Section */}
         <div>
           <h2 className="text-lg font-bold tracking-wide"><Link  to='/'>Shore Guesthouse</Link></h2>
-          <hr className="my-2 w-16 h-1 bg-amber-500 border-none rounded" />
+          <hr className="my-2 w-16 h-1 bg-gradient-to-r from-amber-800 via-amber-500 to-amber-800 border-0 rounded" />
           <p className="text-sm text-gray-400">© 2025 All Rights Reserved</p>
         </div>
 
         {/* Center Section - Contact Info */}
         <div className="space-y-2 cursor-pointer">
-          <p className="text-sm font-medium">📧 webcodexinfo6@gmail.com</p>
+          <p className="text-sm font-medium font-sans">📧 webcodexinfo6@gmail.com</p>
           <p className="text-sm font-medium">📞 +91 63569 27255</p>
         </div>
 
@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='bg-[#d1aa80] p-5 mt-3'>
-        <h1 className='text-center text-amber-900'>Made with ❤️ by <span className='text-amber-950 font-semibold underline cursor-pointer'>Webcodex</span></h1>
+        <h1 className='text-center text-amber-900'>Made with ❤️ by <span className='text-amber-950 font-bold underline cursor-pointer'>Webcodex</span></h1>
       </div>
     </footer>
   );
