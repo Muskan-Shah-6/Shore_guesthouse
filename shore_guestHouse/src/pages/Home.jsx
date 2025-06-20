@@ -5,8 +5,9 @@ import { Link, useNavigate } from 'react-router-dom'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import MarqueeGallery from '../components/marque/MarqueeGallery'
-import AnimatedButton from '../components/Button/AnimatedButton' 
+import AnimatedButton from '../components/Button/AnimatedButton'
 import ImageBanner from '../components/Banner/ImageBanner'
+import Footer from '../components/navigation/Footer'
 
 const Home = () => {
     useEffect(() => {
@@ -56,6 +57,11 @@ const Home = () => {
             </section>
             <section className='h-[600px]'>
                 <ImageBanner height='400px' imageScr={HomeFooter} title={'Plan Your Dream Getaway:'} heading={'Summer 2025 Dates Available'} btn="Book now" position='top_left' />
+            </section>
+
+            {/* Footer section */}
+            <section className='mt-1'>
+                <Footer />
             </section>
         </>
     )
