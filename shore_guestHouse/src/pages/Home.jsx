@@ -35,9 +35,9 @@ const Home = () => {
             </section>
 
             {/* About section */}
-            <section className='py-15' >
+            <section  >
                 <div className='bg-white shadow-md max-w-7xl mx-auto  px-2 sm:px-[15px] lg:px-10 py-15'>
-                    <div data-aos="fade-up" className='space-y-5'>
+                    <div data-aos="fade-up" className='space-y-5 p-5 sm:p-0'>
                         <p className='text-start text-sm text-black'>About us</p>
                         <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl max-w-[700px] w-full leading-relaxed">
                             Tucked into the rugged cliffs of Santorini, the Shore Guesthouse offers a retreat with uninterrupted views of the caldera.
@@ -53,12 +53,12 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className=''>
-                <ImageBanner height='400px' imageScr={HomeFooter} title={'Plan Your Dream Getaway:'} heading={'Summer 2025 Dates Available'} btn="Book now" position='top_left' />
-            </section>
+            
+                <ImageBanner height='400vh' imageScr={HomeFooter} title={'Plan Your Dream Getaway:'} heading={'Summer 2025 Dates Available'} btn="Book now" position='top_left' />
+          
 
             {/* Footer section */}
-            <section className='mt-1'>
+            <section className='mt-2'>
                 <Footer />
             </section>
         </>
