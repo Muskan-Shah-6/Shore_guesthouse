@@ -53,7 +53,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className='h-[600px]'>
+            <section className=''>
                 <ImageBanner height='400px' imageScr={HomeFooter} title={'Plan Your Dream Getaway:'} heading={'Summer 2025 Dates Available'} btn="Book now" position='top_left' />
             </section>
 
