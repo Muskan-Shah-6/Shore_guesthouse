@@ -44,7 +44,7 @@ const Gallery = () => {
     return (
         <>
             {/* first page section */}
-            <section className='w-full'>
+            <section className='w-full '>
                 <div className='p-10'>
                     <h1 className='text-7xl font-normal text-black text-start'>Gallery</h1>
                 </div>
@@ -53,7 +53,7 @@ const Gallery = () => {
                 <ImageBanner imageScr={GalleryHome} heading={'Explore our gallery and start planning.'} position='center' />
             </section>
 
-            <section className='py-30 overflow-hidden'>
+            <section className='py-30 overflow-hidden max-w-7xl mx-auto'>
                 <div className='text-center space-y-3'>
                     <p className='text-md text-black'>Exterior Views</p>
                     <h1 className='text-xl lg:text-5xl sm:text-2xl text-black'>Welcome to Shore Guesthouse</h1>
@@ -100,8 +100,8 @@ const Gallery = () => {
             </section>
 
             {/* carousel */}
-            <section>
-                <div className='bg-[#2f3344] text-white px-4 py-16'>
+            <section className='max-w-7xl mx-auto px-4'>
+                <div className='bg-[#2f3344] text-white rounded-md px-4 py-16 ' >
                     <div className='text-center space-y-2 mb-10'>
                         <p className='text-sm'>Interior View</p>
                         <h1 className='text-4xl font-bold'>Uncover guesthouse's charm and character.</h1>
@@ -140,6 +140,8 @@ const Gallery = () => {
                     </div>
                 </div>
             </section>
+
+            
 
             {/* Footer section */}
             <section className='mt-1'>
