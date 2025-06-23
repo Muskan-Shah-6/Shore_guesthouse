@@ -58,43 +58,45 @@ const Gallery = () => {
                     <p className='text-md text-black'>Exterior Views</p>
                     <h1 className='text-xl lg:text-5xl sm:text-2xl text-black'>Welcome to Shore Guesthouse</h1>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-20 px-4 sm:px-10 md:px-20">
-                    <div className="text-start" data-aos="fade-up">
+                <div className="columns-1 md:columns-2 gap-6 mt-20 px-4 sm:px-10 md:px-20">
+                    <div className="break-inside-avoid mb-6 p-15 bg-amber-50 shadow-md" data-aos="fade-up">
                         <img
                             src={viewImage1}
                             alt="first_img"
-                            className="w-[75%] md:w-[75%] mx-auto md:mx-0 transition-transform duration-300 hover:scale-105 shadow rounded-md"
+                            className="w-full transition-transform duration-300 hover:scale-105 shadow rounded-md"
+                            
                         />
-                        <p className="text-black mt-3">A haven lies behind the blue door</p>
+                        <p className="text-black mt-3 text-center p-10">A haven lies behind the blue door</p>
                     </div>
 
-                    <div className="text-start" data-aos="fade-up">
+                    <div className="break-inside-avoid mb-6" data-aos="fade-up">
                         <img
                             src={viewImage2}
                             alt="second_img"
-                            className="w-[55%] md:w-[55%] mx-auto md:mx-0 transition-transform duration-300 hover:scale-105 shadow rounded-md"
+                            className="w-full transition-transform duration-300 hover:shadow-xl hover:scale-105 shadow rounded-md"
                         />
-                        <p className="text-black mt-3">A lodge Room</p>
+                        <p className="text-black mt-3 text-center p-10">A lodge Room</p>
                     </div>
 
-                    <div className="text-start mt-0 sm:-mt-32 md:mt-0" data-aos="fade-up">
+                    <div className="break-inside-avoid mb-6" data-aos="fade-up">
                         <img
                             src={viewImage4}
                             alt="third_img"
-                            className="w-[55%] md:w-[55%] mx-auto md:mx-0 transition-transform duration-300 hover:scale-105 shadow rounded-md"
+                            className="w-full transition-transform duration-300 hover:shadow-xl hover:scale-105 shadow rounded-md"
                         />
-                        <p className="text-black mt-3">The outer Deck</p>
+                        <p className="text-black mt-3 text-center p-10">The outer Deck</p>
                     </div>
 
-                    <div className="text-start" data-aos="fade-up">
+                    <div className="break-inside-avoid mb-6 bg-amber-50 shadow-md p-15" data-aos="fade-up">
                         <img
                             src={viewImage3}
                             alt="fourth_img"
-                            className="w-[75%] md:w-[75%] mx-auto md:mx-0 transition-transform duration-300 hover:scale-105 shadow rounded-md"
+                            className="w-full transition-transform duration-300 hover:scale-105 shadow rounded-md"
                         />
-                        <p className="text-black mt-3">The outer Deck</p>
+                        <p className="text-black mt-3 text-center p-10">The outer Deck</p>
                     </div>
                 </div>
+
             </section>
 
             {/* carousel */}
