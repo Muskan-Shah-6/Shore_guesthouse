@@ -64,9 +64,9 @@ const Gallery = () => {
                             src={viewImage1}
                             alt="first_img"
                             className="w-full transition-transform duration-300 hover:scale-105 shadow rounded-md"
-                            
+
                         />
-                        <p className="text-black mt-3 text-center p-10">A haven lies behind the blue door</p>
+                        <p className="text-black mt-3 text-center">A haven lies behind the blue door</p>
                     </div>
 
                     <div className="break-inside-avoid mb-6" data-aos="fade-up">
@@ -75,7 +75,7 @@ const Gallery = () => {
                             alt="second_img"
                             className="w-full transition-transform duration-300 hover:shadow-xl hover:scale-105 shadow rounded-md"
                         />
-                        <p className="text-black mt-3 text-center p-10">A lodge Room</p>
+                        <p className="text-black mt-3 text-center">A lodge Room</p>
                     </div>
 
                     <div className="break-inside-avoid mb-6" data-aos="fade-up">
@@ -84,7 +84,7 @@ const Gallery = () => {
                             alt="third_img"
                             className="w-full transition-transform duration-300 hover:shadow-xl hover:scale-105 shadow rounded-md"
                         />
-                        <p className="text-black mt-3 text-center p-10">The outer Deck</p>
+                        <p className="text-black mt-3 text-center">The outer Deck</p>
                     </div>
 
                     <div className="break-inside-avoid mb-6 bg-amber-50 shadow-md p-15" data-aos="fade-up">
@@ -93,7 +93,7 @@ const Gallery = () => {
                             alt="fourth_img"
                             className="w-full transition-transform duration-300 hover:scale-105 shadow rounded-md"
                         />
-                        <p className="text-black mt-3 text-center p-10">The outer Deck</p>
+                        <p className="text-black mt-3 text-center">The outer Deck</p>
                     </div>
                 </div>
 
