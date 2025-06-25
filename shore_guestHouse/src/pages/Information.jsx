@@ -23,18 +23,30 @@ const Information = () => {
                 </div>
             </section>
             {/* story section */}
-            <section className='py-30 overflow-hidden max-w-7xl mx-auto'>
-                <div className='flex justify-around flex-wrap'>
-                    <div className='p-5' data-aos="fade-right">
-                        <h1 className='text-black font-bold text-2xl'>My Story</h1>
+            <section className="py-20 px-6 sm:px-10 md:px-20 max-w-7xl mx-auto overflow-hidden">
+                <div className="flex flex-col md:flex-row md:justify-between items-start gap-10">
+                    {/* Left Side: Heading */}
+                    <div className="w-full md:w-1/3" data-aos="fade-right">
+                        <h1 className="text-black font-bold text-5xl sm:text-4xl md:text-5xl">My Story</h1>
                     </div>
-                    <div className='p-5'>
-                        <p data-aos="fade-up" className='w-[450px] text-start text-xl font-normal'> Shore Guesthouse is a dream come true, a labor of love inspired by the childhood summers I spent here with my grandparents. Their stories of Oia, the warmth of the island life, and the magic of this place have always stayed with me. Restoring this home has been a way to honor their memory and share the spirit of Oia with others.</p>
-                        <img data-aos="fade-up" src={storyOne} alt="story_1_img" className='h-[500px] w-[500px] mt-10' />
+
+                    {/* Right Side: Paragraph and Image */}
+                    <div className="w-full md:w-2/3 space-y-6">
+                        <p data-aos="fade-up" className="text-lg sm:text-xl font-normal text-start font-serif">
+                            Shore Guesthouse is a dream come true, a labor of love inspired by the childhood summers I spent here with my grandparents.
+                            Their stories of Oia, the warmth of the island life, and the magic of this place have always stayed with me.
+                            Restoring this home has been a way to honor their memory and share the spirit of Oia with others.
+                        </p>
+                        <img data-aos="fade-up"
+                            src={storyOne}
+                            alt="story_1_img"
+                            className="w-full max-w-[500px] h-auto rounded-md shadow-md"
+                        />
                     </div>
                 </div>
-                <hr />
+                <hr className="mt-16 border-gray-300" />
             </section>
+
         </>
     )
 }
