@@ -145,18 +145,18 @@ const Gallery = () => {
             {/* Neighbour section starts */}
             <section className='max-w-7xl mx-auto px-4'>
                 <div className='bg-[#ffffff] text-black rounded-md px-4 py-16 ' >
-                    <div className='text-center space-y-5 mb-10'>
+                    <div className='text-center space-y-5 mb-10' data-aos="fade-up">
                         <p className='text-sm'>The Neighborhood</p>
                         <h1 className='text-4xl font-normal'>Wander its winding streets and soak in the magic.</h1>
                     </div>
-                    <div>
-                        <Marquee speed={50} gradient={false} pauseOnHover={true}>
+                    <div className='mt-25'>
+                        <Marquee speed={50} gradient={false} pauseOnHover={false}>
                             {images.map((src, idx) => (
                                 <img
                                     key={idx}
                                     src={src}
                                     alt={`marquee-${idx}`}
-                                    className="h-60 w-[300px] mx-4 object-cover rounded-lg shadow-md"
+                                    className="h-[400px] w-[400px] mx-4 object-cover rounded-sm border-15 border-amber-50 p-5 shadow-md "
                                 />
                             ))}
                         </Marquee>
