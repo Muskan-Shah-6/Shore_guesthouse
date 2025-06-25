@@ -9,7 +9,8 @@ const ImageBanner = ({
   position = 'center',
   overlayOpacity = 0.5,
   textClassname = '',
-  classname = ''
+  classname = '',
+  imgHeigth = ''
 }) => {
   const positionClasses = {
     center: 'items-center justify-center text-center',
@@ -25,7 +26,7 @@ const ImageBanner = ({
           <img
             src={imageScr}
             alt="Banner background"
-            className="absolute inset-0 w-full h-full object-cover"
+            className={`absolute inset-0 w-full h-full object-cover ${imgHeigth}`}
           />
           {/* Overlay */}
           <div
