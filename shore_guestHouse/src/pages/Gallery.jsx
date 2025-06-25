@@ -10,6 +10,8 @@ import galleryCarousel2 from '../assets/images/Gallery/gallery_carousel_2.png'
 import galleryCarousel3 from '../assets/images/Gallery/gallery_carousel_3.png'
 import galleryCarousel4 from '../assets/images/Gallery/gallery_carousel_4.png'
 import galleryCarousel5 from '../assets/images/Gallery/gallery_carousel_5.png'
+import FooterUpBanner from '../assets/images/Gallery/gallery_before_footer.png'
+import galleryFooter from '../assets/images/Gallery/gallery_footer.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import Marquee from 'react-fast-marquee'
@@ -162,6 +164,17 @@ const Gallery = () => {
                         </Marquee>
                     </div>
                 </div>
+            </section>
+            {/* Banner before footer banner */}
+            <section className='max-w-7xl mx-auto px-4'>
+                <div>
+                    <img src={FooterUpBanner} alt="FooterUpBanner" height='100vh' />
+                </div>
+            </section>
+
+            {/* Footer Banner */}
+            <section className='max-w-7xl mx-auto px-4  py-25 pb-1'>
+                <ImageBanner height='400vh' imageScr={galleryFooter} title={'Plan Your Dream Getaway:'} heading={'Summer 2025 Dates Available'} btn="Book now" position='top_left' />
             </section>
 
             {/* Footer section */}
