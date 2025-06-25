@@ -44,6 +44,7 @@ const ImageBanner = ({
               data-aos-offset="0"
             >
               {title}
+
             </p>
             <h1
               className={`text-white text-2xl sm:text-4xl font-semibold leading-snug ${textClassname}`}
@@ -53,6 +54,7 @@ const ImageBanner = ({
               data-aos-offset="0"
             >
               {heading}
+              
             </h1>
             {btn && <AnimatedButton>{btn}</AnimatedButton>}
           </div>
