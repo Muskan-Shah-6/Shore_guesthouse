@@ -12,6 +12,7 @@ import galleryCarousel4 from '../assets/images/Gallery/gallery_carousel_4.png'
 import galleryCarousel5 from '../assets/images/Gallery/gallery_carousel_5.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import Marquee from 'react-fast-marquee'
 import Footer from '../components/navigation/Footer'
 
 const Gallery = () => {
@@ -31,6 +32,7 @@ const Gallery = () => {
         galleryCarousel5
     ];
 
+
     // Autoplay with useEffect
     useEffect(() => {
         const interval = setInterval(() => {
@@ -39,7 +41,6 @@ const Gallery = () => {
 
         return () => clearInterval(interval); // cleanup
     });
-
 
     return (
         <>
@@ -147,6 +148,18 @@ const Gallery = () => {
                     <div className='text-center space-y-5 mb-10'>
                         <p className='text-sm'>The Neighborhood</p>
                         <h1 className='text-4xl font-normal'>Wander its winding streets and soak in the magic.</h1>
+                    </div>
+                    <div>
+                        <Marquee speed={50} gradient={false} pauseOnHover={true}>
+                            {images.map((src, idx) => (
+                                <img
+                                    key={idx}
+                                    src={src}
+                                    alt={`marquee-${idx}`}
+                                    className="h-60 w-[300px] mx-4 object-cover rounded-lg shadow-md"
+                                />
+                            ))}
+                        </Marquee>
                     </div>
                 </div>
             </section>
