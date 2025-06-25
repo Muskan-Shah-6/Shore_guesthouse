@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ImageBanner from '../components/Banner/ImageBanner'
 import firstPgImage from '../assets/images/Info/info_home.png'
 import storyOne from '../assets/images/Info/story_img_1.png'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Information = () => {
+    useEffect(() => {
+        Aos.init({
+            duration: 1000,
+            once: true
+        })
+    }, [])
     return (
         <>
             <section className='w-full'>
@@ -16,13 +24,13 @@ const Information = () => {
             </section>
             {/* story section */}
             <section className='py-30 overflow-hidden max-w-7xl mx-auto'>
-                <div className='flex justify-around'>
-                    <div>
+                <div className='flex justify-around flex-wrap'>
+                    <div className='p-5' data-aos="fade-right">
                         <h1 className='text-black font-bold text-2xl'>My Story</h1>
                     </div>
-                    <div>
-                        <p className='w-96 text-start'> Shore Guesthouse is a dream come true, a labor of love inspired by the childhood summers I spent here with my grandparents. Their stories of Oia, the warmth of the island life, and the magic of this place have always stayed with me. Restoring this home has been a way to honor their memory and share the spirit of Oia with others.</p>
-                        <img src={storyOne} alt="story_1_img" className='h-96 w-96 mt-10' />
+                    <div className='p-5'>
+                        <p data-aos="fade-up" className='w-[450px] text-start text-xl font-normal'> Shore Guesthouse is a dream come true, a labor of love inspired by the childhood summers I spent here with my grandparents. Their stories of Oia, the warmth of the island life, and the magic of this place have always stayed with me. Restoring this home has been a way to honor their memory and share the spirit of Oia with others.</p>
+                        <img data-aos="fade-up" src={storyOne} alt="story_1_img" className='h-[500px] w-[500px] mt-10' />
                     </div>
                 </div>
                 <hr />
