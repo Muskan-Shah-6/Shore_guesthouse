@@ -156,7 +156,7 @@ const Gallery = () => {
                                     key={idx}
                                     src={src}
                                     alt={`marquee-${idx}`}
-                                    className="h-[400px] w-[400px] mx-4 object-cover rounded-sm border-15 border-amber-50 p-5 shadow-md "
+                                    className="h-[400px] w-[400px] mx-4 object-cover rounded-sm  p-15 bg-amber-50 shadow-md "
                                 />
                             ))}
                         </Marquee>
