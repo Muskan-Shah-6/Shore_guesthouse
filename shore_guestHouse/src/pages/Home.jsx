@@ -9,6 +9,7 @@ import AnimatedButton from '../components/Button/AnimatedButton'
 import ImageBanner from '../components/Banner/ImageBanner'
 import Footer from '../components/navigation/Footer'
 
+
 const Home = () => {
     useEffect(() => {
         AOS.init({

@@ -141,7 +141,15 @@ const Gallery = () => {
                 </div>
             </section>
 
-            
+            {/* Neighbour section starts */}
+            <section className='max-w-7xl mx-auto px-4'>
+                <div className='bg-[#ffffff] text-black rounded-md px-4 py-16 ' >
+                    <div className='text-center space-y-5 mb-10'>
+                        <p className='text-sm'>The Neighborhood</p>
+                        <h1 className='text-4xl font-normal'>Wander its winding streets and soak in the magic.</h1>
+                    </div>
+                </div>
+            </section>
 
             {/* Footer section */}
             <section className='mt-1'>
