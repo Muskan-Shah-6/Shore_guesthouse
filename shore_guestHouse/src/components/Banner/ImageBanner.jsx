@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import AnimatedButton from '../Button/AnimatedButton';
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const ImageBanner = ({
   imageScr,
@@ -17,8 +19,18 @@ const ImageBanner = ({
     top_left: 'items-start justify-start text-left px-4 sm:px-8 pt-6 sm:pt-10'
   };
 
+
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      once: false
+    });
+    setTimeout(() => {
+      Aos.refresh();
+    }, 500);
+  }, []);
   return (
-    <section className={`w-full ${classname}`}> 
+    <section className={`w-full ${classname}`}>
       <div className="max-w-7xl mx-auto relative  overflow-hidden">
         {/* Background image container with fixed min-height */}
         <div className="relative w-full min-h-[300px] sm:min-h-[400px] lg:min-h-[450px]">
@@ -55,9 +67,9 @@ const ImageBanner = ({
               data-aos-offset="0"
             >
               {heading}
-              
+
             </h1>
-            {btn && <AnimatedButton>{btn}</AnimatedButton>}
+            {btn  && <AnimatedButton>{btn}</AnimatedButton>}
           </div>
         </div>
       </div>

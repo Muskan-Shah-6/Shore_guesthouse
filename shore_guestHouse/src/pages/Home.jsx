@@ -14,7 +14,7 @@ const Home = () => {
     useEffect(() => {
         AOS.init({
             duration: 1000,
-            once: true
+            once: false
         })
     })
     const navigate = useNavigate()
@@ -56,7 +56,7 @@ const Home = () => {
             </section>
             
                 <ImageBanner height='400vh' imageScr={HomeFooter} title={'Plan Your Dream Getaway:'} heading={'Summer 2025 Dates Available'} btn="Book now" position='top_left' />
-          
+
 
             {/* Footer section */}
             <section className='mt-2'>
